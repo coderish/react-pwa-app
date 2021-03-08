@@ -1,5 +1,9 @@
 runtime: nodejs12
 service: codeclef
+manual_scaling:
+  instances: 1
+# resources:
+#   memory_gb: 4
 handlers:
 # Serve all static files with url ending with a file extension
 - url: /(.*\..+)$
